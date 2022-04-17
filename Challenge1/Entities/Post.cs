@@ -21,10 +21,13 @@ namespace Challenge1
         public string Title { get; set; }
         public string Content { get; set; }
         public DateTime Date { get; set; }
+      
+        public ICollection<Comment> Comments { get; set; }
+
 
         //Reference navigation properties
-        public Usuario Usuario { get; set; } 
-        //Relacion de uno amuchos
+        public Usuario Usuario { get; set; } //Relacion de uno amuchos
+
     }
-    
+
 }
